@@ -97,7 +97,7 @@ Is the system packaged Git too old? Remove it and compile from source.
     checkinstall --pkgname=git --pkgversion=1.8.4.1 -y --default --deldesc=yes -D make prefix=/usr/local all
 
     # Install into /usr/local/bin
-    sudo make prefix=/usr/local install
+    sudo checkinstall --pkgname=git --pkgversion=1.8.4.1 -y --default --deldesc=yes -D make prefix=/usr/local all
 
     # When editing config/gitlab.yml (Step 6), change the git bin_path to /usr/local/bin/git
 
