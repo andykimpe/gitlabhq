@@ -10,7 +10,7 @@ If this is unclear check the [GitLab Blog](http://blog.gitlab.org/) for installa
 
 This installation guide was created for and tested on **Debian/Ubuntu** operating systems. Please read [`doc/install/requirements.md`](./requirements.md) for hardware and operating system requirements.
 
-This is the official installation guide to set up a production server. To set up a **development installation** or for many other installation options please consult [the installation section in the readme](https://github.com/gitlabhq/gitlabhq#installation).
+This is the official installation guide to set up a production server. To set up a **development installation** or for many other installation options please consult [the installation section in the readme](https://github.com/andykimpe/gitlabhq#installation).
 
 The following steps have been known to work. Please **use caution when you deviate** from this guide. Make sure you don't violate any assumptions GitLab makes about its environment. For example many people run into permission problems because they changed the location of directories or run services as the wrong user.
 
@@ -427,5 +427,5 @@ These steps are fairly general and you will need to figure out the exact details
 ### Examples
 
 If you have successfully set up a provider that is not shipped with GitLab itself, please let us know.
-You can help others by reporting successful configurations and probably share a few insights or provide warnings for common errors or pitfalls by sharing your experience [in the public Wiki](https://github.com/gitlabhq/gitlab-public-wiki/wiki/Custom-omniauth-provider-configurations).
+You can help others by reporting successful configurations and probably share a few insights or provide warnings for common errors or pitfalls by sharing your experience [in the public Wiki](https://github.com/andykimpe/gitlab-public-wiki/wiki/Custom-omniauth-provider-configurations).
 While we can't officially support every possible auth mechanism out there, we'd like to at least help those with special needs.
