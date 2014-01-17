@@ -76,12 +76,14 @@ Make sure you have the right version of Python installed.
     # For reStructuredText markup language support install required package:
     sudo apt-get install -y python-docutils
 
-#Install Git
+#Install ppa for Git
 
 
 #ubuntu
 
 apt-get -y install python-software-properties
+
+add-apt-repository ppa:git-core/ppa -y
 
 #debian
 
@@ -93,9 +95,9 @@ mv add-apt-repository.sh.txt /usr/bin/add-apt-repository
 
 chmod +x /usr/bin/add-apt-repository
 
-#add ppa
-
 add-apt-repository ppa:git-core/ppa
+
+#Install Git
 
 apt-get update
 
