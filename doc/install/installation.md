@@ -58,6 +58,8 @@ Make sure you have the right version of Python installed.
 
     # Install Python
     sudo apt-get install -y python
+    
+    sudo apt-get -y autoremove
 
     # Make sure that Python is 2.5+ (3.x is not supported at the moment)
     python --version
