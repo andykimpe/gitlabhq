@@ -125,6 +125,8 @@ Remove the old Ruby 1.8 if present
 
 Download Ruby and compile it:
 
+    
+    apt-get -y build-dep ruby
     mkdir /tmp/ruby && cd /tmp/ruby
     curl --progress ftp://ftp.ruby-lang.org/pub/ruby/2.0/ruby-2.0.0-p353.tar.gz | tar xz
     cd ruby-2.0.0-p353
