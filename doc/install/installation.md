@@ -86,30 +86,23 @@ Make sure you have the right version of Git installed
 
 Is the system packaged Git too old? Remove it and compile from source.
 
-    # Install dependencies
-    sudo apt-get install -y libcurl4-openssl-dev libexpat1-dev gettext zlib1g-dev libssl-dev build-essential checkinstall libcurl3-gnutls liberror-perl libexpat1 perl-modules zlib1g
-    
-    apt-get -y build-dep git-core
+apt-get -y install python-software-properties
 
-    # Remove packaged Git
-    sudo apt-get remove git-core git
-    
-    sudo apt-get -y autoremove
+add-apt-repository ppa:git-core/ppa
 
-    # Download and compile from source
-    cd /tmp
-    
-    curl --progress https://git-core.googlecode.com/files/git-1.8.4.1.tar.gz | tar xz
-    cd git-1.8.4.1/
-    
-    ./configure
-    
-    make
-    
-    sudo checkinstall -D --install=no --pkgname=git-core --pkgversion=1.8.4.1 --provides=git --requires=build-essential,libcurl3-gnutls,liberror-perl,libexpat1,perl-modules,zlib1g -y make install
+if command add-apt-repository not found
 
-    # Install into /usr/local/bin
-    sudo checkinstall --pkgname=git --pkgversion=1.8.4.1 -y --default --deldesc=yes -D make prefix=/usr/local all
+wget http://blog.anantshri.info/content/uploads/2010/09/add-apt-repository.sh.txt
+
+mv add-apt-repository.sh.txt /bin/add-apt-repository
+
+apt-get update
+
+apt-get -y dist-upgrade
+
+apt-get -y install git-core
+
+ make prefix=/usr/local all
 
     # When editing config/gitlab.yml (Step 6), change the git bin_path to /usr/local/bin/git
 
