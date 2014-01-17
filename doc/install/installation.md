@@ -86,15 +86,23 @@ Make sure you have the right version of Git installed
 
 Is the system packaged Git too old? Remove it and compile from source.
 
+install add-apt-repository
+
+#ubuntu
+
 apt-get -y install python-software-properties
 
-add-apt-repository ppa:git-core/ppa
-
-if command add-apt-repository not found
+#debian
 
 wget http://blog.anantshri.info/content/uploads/2010/09/add-apt-repository.sh.txt
 
 mv add-apt-repository.sh.txt /bin/add-apt-repository
+
+chmod +x /bin/add-apt-repository
+
+add ppa
+
+add-apt-repository ppa:git-core/ppa
 
 apt-get update
 
