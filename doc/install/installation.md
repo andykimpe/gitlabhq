@@ -88,13 +88,13 @@ Is the system packaged Git too old? Remove it and compile from source.
     sudo apt-get remove git-core
 
     # Install dependencies
-    sudo apt-get install -y libcurl4-openssl-dev libexpat1-dev gettext libz-dev libssl-dev build-essential
+    sudo apt-get install -y libcurl4-openssl-dev libexpat1-dev gettext libz-dev libssl-dev build-essential checkinstall
 
     # Download and compile from source
     cd /tmp
     curl --progress https://git-core.googlecode.com/files/git-1.8.4.1.tar.gz | tar xz
     cd git-1.8.4.1/
-    make prefix=/usr/local all
+    checkinstall --pkgname=git --pkgversion=1.8.4.1 -y --default --deldesc=yes -D make prefix=/usr/local all
 
     # Install into /usr/local/bin
     sudo make prefix=/usr/local install
