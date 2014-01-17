@@ -76,23 +76,16 @@ Make sure you have the right version of Python installed.
     # For reStructuredText markup language support install required package:
     sudo apt-get install -y python-docutils
 
-Make sure you have the right version of Git installed
+#Install Git
 
-    # Install Git
-    sudo apt-get install -y git-core
-
-    # Make sure Git is version 1.7.10 or higher, for example 1.7.12 or 1.8.4
-    git --version
-
-Is the system packaged Git too old? Remove it and compile from source.
-
-install add-apt-repository
 
 #ubuntu
 
 apt-get -y install python-software-properties
 
 #debian
+
+apt-get -y purge python-software-properties
 
 wget http://blog.anantshri.info/content/uploads/2010/09/add-apt-repository.sh.txt
 
@@ -110,9 +103,9 @@ apt-get -y dist-upgrade
 
 apt-get -y install git-core
 
- make prefix=/usr/local all
+git --version
 
-    # When editing config/gitlab.yml (Step 6), change the git bin_path to /usr/local/bin/git
+git version 1.8.5.2
 
 **Note:** In order to receive mail notifications, make sure to install a
 mail server. By default, Debian is shipped with exim4 whereas Ubuntu
