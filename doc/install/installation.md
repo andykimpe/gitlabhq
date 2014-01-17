@@ -130,7 +130,8 @@ Download Ruby and compile it:
     cd ruby-2.0.0-p353
     ./configure --disable-install-rdoc
     make
-    sudo make install
+    sudo apt-get -y install checkinstall
+    checkinstall --pkgname=ruby --pkgversion=2.0.0.p353 -y --install=yes --deldesc=yes -D make install
 
 Install the Bundler Gem:
 
