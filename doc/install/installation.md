@@ -86,11 +86,11 @@ Make sure you have the right version of Git installed
 
 Is the system packaged Git too old? Remove it and compile from source.
 
-    # Remove packaged Git
-    sudo apt-get remove git-core
-
     # Install dependencies
     sudo apt-get install -y libcurl4-openssl-dev libexpat1-dev gettext libz-dev libssl-dev build-essential checkinstall
+
+    # Remove packaged Git
+    sudo apt-get remove git-core git
 
     # Download and compile from source
     cd /tmp
