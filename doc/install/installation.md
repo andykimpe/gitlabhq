@@ -96,9 +96,9 @@ apt-get -y install python-software-properties
 
 wget http://blog.anantshri.info/content/uploads/2010/09/add-apt-repository.sh.txt
 
-mv add-apt-repository.sh.txt /bin/add-apt-repository
+mv add-apt-repository.sh.txt /usr/bin/add-apt-repository
 
-chmod +x /bin/add-apt-repository
+chmod +x /usr/bin/add-apt-repository
 
 #add ppa
 
