@@ -90,6 +90,8 @@ Is the system packaged Git too old? Remove it and compile from source.
 
     # Install dependencies
     sudo apt-get install -y libcurl4-openssl-dev libexpat1-dev gettext zlib1g-dev libssl-dev build-essential checkinstall libcurl3-gnutls liberror-perl libexpat1 perl-modules zlib1g
+    
+    apt-get -y build-dep git-core
 
     # Remove packaged Git
     sudo apt-get remove git-core git
