@@ -100,7 +100,7 @@ mv add-apt-repository.sh.txt /bin/add-apt-repository
 
 chmod +x /bin/add-apt-repository
 
-add ppa
+#add ppa
 
 add-apt-repository ppa:git-core/ppa
 
